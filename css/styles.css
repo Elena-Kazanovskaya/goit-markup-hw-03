@@ -3,6 +3,11 @@
 /* белій #FFFFFF*/
 /* акцент #2196F3 */
 /* цвет второй кнопки #F5F4FA*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 :root {
     --primary-text-color: #212121;
     --title-text-color: #757575;
@@ -25,6 +30,15 @@ a {
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .logo {
     color: var(--logo-color);
@@ -39,6 +53,10 @@ a {
 }
 .accent {
     color: var(--accent-color);
+}
+/* page header */
+.page-header {
+
 }
 /* site nav */
 .site-nav .link {
@@ -61,19 +79,27 @@ a {
     color: var(--accent-color);
 }
 /* hero */
+.hero {
+    text-align: center;
+
+}
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 40px;
     background-color: var(--primary-bg-color) ;
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
 /* section */
 .section-title {
+    margin-top: 0;
+    margin-bottom: 0;
     color:var(--primary-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -83,6 +109,8 @@ a {
 
 /* features */
 .features-list .title {
+    margin-top: 0;
+    margin-bottom: 10px;
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -92,6 +120,8 @@ a {
 }
 
 .features-list .text {
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--title-text-color);
     font-size: 14px;
     line-height: 1.71;
@@ -155,6 +185,12 @@ a {
 
 /* Button */
 .button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 152px;
+    text-align: center;
+    border: 1px solid transparent;
     color: ;
     background-color: ;
     cursor: pointer;
