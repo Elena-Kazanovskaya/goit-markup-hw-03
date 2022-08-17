@@ -39,6 +39,7 @@ a {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    outline: 2px solid tomato;
 }
 .logo {
     color: var(--logo-color);
@@ -59,7 +60,18 @@ a {
 
 }
 /* site nav */
+.site-nav {
+    display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -86,6 +98,7 @@ a {
 .hero-title {
     margin-top: 0;
     margin-bottom: 40px;
+    
     background-color: var(--primary-bg-color) ;
     color: var(--primary-white-color);
     font-weight: 900;
