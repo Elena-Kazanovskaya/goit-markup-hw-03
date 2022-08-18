@@ -22,10 +22,7 @@ body {background-color: var(--primary-white-color);
     color: var(--primary-text-color) ;
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
-               
-}
-a {
-    text-decoration: none;
+            
 }
 
 .list {
@@ -33,6 +30,12 @@ a {
     padding: 0;
     margin: 0;
 }
+
+a {
+    text-decoration: none;
+}
+
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -59,6 +62,12 @@ a {
 .page-header {
 
 }
+
+/* main nav */
+.main-nav {
+    display: flex;
+    align-items: center;
+}
 /* site nav */
 .site-nav {
     display: flex;
@@ -81,8 +90,15 @@ a {
 }
 
 .site-nav .link.social {
+    
     color: var(--title-text-color);
 }
+
+.link.social {
+    display: flex;
+    margin-left: auto;
+}
+
 .site-nav .link:focus,
 .site-nav .link:hover {
     color: var(--accent-color);
