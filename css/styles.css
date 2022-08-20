@@ -67,10 +67,13 @@ a {
 .main-nav {
     display: flex;
     align-items: center;
+    
 }
 /* site nav */
 .site-nav {
     display: flex;
+    margin-left: 93px;
+
 }
 
 .site-nav .item:not(:last-child) {
@@ -141,6 +144,9 @@ a {
 }
 
 /* features */
+.features-list {
+    display: flex;
+}
 .features-list .title {
     margin-top: 0;
     margin-bottom: 10px;
