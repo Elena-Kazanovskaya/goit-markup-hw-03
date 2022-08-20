@@ -147,6 +147,11 @@ a {
 .features-list {
     display: flex;
 }
+
+.features-list .item {
+    width: 270px;
+    background-color: tomato;
+}
 .features-list .title {
     margin-top: 0;
     margin-bottom: 10px;
