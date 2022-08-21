@@ -60,6 +60,8 @@ a {
 }
 /* page header */
 .page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
 
 }
 
@@ -67,13 +69,21 @@ a {
 .main-nav {
     display: flex;
     align-items: center;
-    
+   
 }
 /* site nav */
+.page-navigation {
+    display: flex;
+    align-items: center;
+    
+}
 .site-nav {
     display: flex;
     margin-left: 93px;
 
+}
+.auth-nav {
+    margin-left: auto;
 }
 
 .site-nav .item:not(:last-child) {
@@ -99,7 +109,7 @@ a {
 
 .link.social {
     display: flex;
-    margin-left: auto;
+    
 }
 
 .site-nav .link:focus,
@@ -146,6 +156,7 @@ a {
 /* features */
 .features-list {
     display: flex;
+    gap: 30px;
 }
 
 .features-list .item {
@@ -170,8 +181,15 @@ a {
     font-size: 14px;
     line-height: 1.71;
 }
-
+.heading {
+    display: flex;
+    gap: 30px;
+}
 /* team */
+.team-list {
+    display: flex;
+    gap: 30px;
+}
 .team-list .title {
     color: var(--primary-text-color);
     font-weight: 500;
