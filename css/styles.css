@@ -3,11 +3,7 @@
 /* белій #FFFFFF*/
 /* акцент #2196F3 */
 /* цвет второй кнопки #F5F4FA*/
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+
 :root {
     --primary-text-color: #212121;
     --title-text-color: #757575;
@@ -22,7 +18,7 @@ body {background-color: var(--primary-white-color);
     color: var(--primary-text-color) ;
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
-            
+ 
 }
 
 .list {
@@ -35,14 +31,18 @@ a {
     text-decoration: none;
 }
 
-
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid tomato;
+    outline: ;
 }
 .logo {
     color: var(--logo-color);
@@ -60,8 +60,7 @@ a {
 }
 /* page header */
 .page-header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    Border-bottom 1px solid #ECECEC
 
 }
 
@@ -126,7 +125,7 @@ a {
 }
 .hero-title {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     
     background-color: var(--primary-bg-color) ;
     color: var(--primary-white-color);
@@ -138,14 +137,28 @@ a {
     text-transform: uppercase;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* section */
 .section {
-    padding-top: ;
-    padding-bottom: ;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
+
 .section-title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 50px;
     color:var(--primary-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -161,7 +174,7 @@ a {
 
 .features-list .item {
     width: 270px;
-    background-color: tomato;
+    
 }
 .features-list .title {
     margin-top: 0;
@@ -186,12 +199,23 @@ a {
     gap: 30px;
 }
 /* team */
+.card {
+    background-color: var(--primary-white-color);
+}
+.section-container {
+    background-color: var(--button-color);
+}
 .team-list {
     display: flex;
     gap: 30px;
+    /* background-color: var(--button-color); */
+    
 }
 .team-list .title {
+    margin-top: 30px;
+    margin-bottom: 10px;
     color: var(--primary-text-color);
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -200,12 +224,14 @@ a {
 }
 
 .team-list .text {
+    margin-bottom: 30px;
     color: var(--title-text-color);
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
 
 }
+
 /* Examples */
 .work-list .title {
     color: var(--primary-text-color);
@@ -253,8 +279,6 @@ a {
     min-width: 152px;
     text-align: center;
     border: 1px solid transparent;
-    color: ;
-    background-color: ;
     cursor: pointer;
     font-family: inherit;
     font-weight: 500;
