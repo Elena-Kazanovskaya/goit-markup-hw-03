@@ -107,6 +107,7 @@ ul {
 .site-nav .item:not(:last-child) {
     margin-right: 50px;
 }
+
 .site-nav .link {
     display: block;
     padding-top: 32px;
@@ -222,14 +223,9 @@ ul {
     /* flex-basis: calc((100%-60px)/3); */
     margin-bottom: 20px;
     background-color: var(--primary-white-color);
-    border: ;
+    
 }
-/* .card-title {
-    margin-top: 20px;
-}
-.card-text {
-    margin-top: 4px;
-} */
+
 .section-container {
     background-color: var(--button-color);
 }
