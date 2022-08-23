@@ -233,6 +233,12 @@ img {
 }
 
 /* Examples */
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
 .work-list .title {
     color: var(--primary-text-color);
     font-weight: 700;
