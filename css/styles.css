@@ -121,13 +121,12 @@ ul {
 }
 
 .site-nav .link.social {
-    
     color: var(--title-text-color);
+
 }
 
 .link.social {
     display: flex;
-    
 }
 
 .site-nav .link:focus,
@@ -220,7 +219,7 @@ ul {
 /* team */
 .card {
     /* flex-basis: calc((100%-60px)/3); */
-    margin-bottom: 20px;
+    margin-bottom: 0;
     background-color: var(--primary-white-color);
     
 }
@@ -291,10 +290,26 @@ ul {
     margin-bottom: 0;
 }
 /* Footer */
-.address-list {
+.footer {
     background-color: var(--primary-bg-color);
+     
 }
+.footer-container {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 60px;
+    padding-left: 215px;
+    padding-bottom: 60px;
 
+}
+.address-footer {
+    margin-top: 0;
+}
+.address-list {
+    display: inline-block;
+    margin-top: 20px;   
+}
 
 .address-list .link {
     color: var(--primary-white-color);
