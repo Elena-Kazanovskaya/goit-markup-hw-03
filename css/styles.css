@@ -14,6 +14,7 @@
     --primary-bg-color: #2F303A;
     --social-text-color: rgba(255, 255, 255, 0.6);
     --border-color: #ECECEC; 
+    --primary-button-focus: #188ce8;
 }
 body {background-color: var(--primary-white-color);
     color: var(--primary-text-color) ;
@@ -371,9 +372,10 @@ ul {
     border: 1px solid transparent;
     cursor: pointer;
     font-family: inherit;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.62;
+    letter-spacing: 0.06em;
     text-align: center;
 }
 .button-nav {
@@ -395,9 +397,18 @@ ul {
     background-color: var(--button-color);
 }
 
-.button.secondary:hover,
-.button.secondary:focus {
-   color: var(--primary-white-color); 
-   background-color: var(--accent-color);
+.contacts .link:focus,
+.contacts .link:hover {
+    color: var(--accent-color);
 }
 
+.button.primary:hover,
+.button.primary:focus {
+   color: var(--primary-white-color); 
+   background-color: var(--primary-button-focus);
+}
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
