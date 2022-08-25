@@ -103,7 +103,16 @@ ul {
     margin-left: auto;
 }
 
+.contacts {
+    display: flex;
+    margin-left: 93px;
+}
+
 .site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts .item:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -119,8 +128,20 @@ ul {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+.contacts .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-.site-nav .link.social {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.contacts .link.social {
     color: var(--title-text-color);
 
 }
@@ -136,6 +157,16 @@ ul {
 .site-nav .link.current {
     color: var(--accent-color);
 }
+
+.contacts .link:focus,
+.contacts .link:hover {
+    color: var(--accent-color);
+}
+
+.contacts .link.current {
+    color: var(--accent-color);
+}
+
 /* hero */
 .hero {
     text-align: center;
