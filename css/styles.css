@@ -58,7 +58,7 @@ ul {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: ;
+    
 }
 .logo {
     color: var(--logo-color);
@@ -112,9 +112,9 @@ ul {
     margin-left: 93px;
 
 }
-.auth-nav {
-    margin-left: auto;
-}
+/* .auth-nav {
+    margin-left: auto; */
+
 
 .contacts {
     display: flex;
@@ -240,8 +240,7 @@ ul {
 }
 
 .features-list .item {
-    width: 270px;
-    flex-basis: calc((100%-90px)/4);
+    flex-basis: calc((100% - 90px)/4);
     
 }
 .features-list .title {
@@ -302,7 +301,7 @@ ul {
 
 }
 .team-list .card {
-    flex-basis: calc((100%-90px)/4);
+    flex-basis: calc((100% - 90px)/4);
 }
 
 .employees {
@@ -320,7 +319,7 @@ ul {
 
 /* Examples */
 .work-list {
-    flex-basis: calc((100%-60px)/3);
+    
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -350,6 +349,10 @@ ul {
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
 }
+
+.work-list .card {
+    flex-basis: calc((100% - 60px)/3);
+}
 .work-list>.card:nth-last-child(-n+3) {
     margin-bottom: 0;
 }
@@ -361,7 +364,7 @@ ul {
      
 }
 .footer-container {
-    display: inline-block;
+    /* display: inline-block; */
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 215px;
@@ -432,7 +435,8 @@ ul {
     padding-right: 22px;
     padding-bottom: 6px;
     padding-left: 22px;
-    min-width: 152px;
+    min-width: auto;
+    font-weight: 500;
     color: var(--primary-text-color);
     background-color: var(--button-color);
 }
