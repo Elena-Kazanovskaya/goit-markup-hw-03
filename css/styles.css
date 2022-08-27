@@ -118,7 +118,7 @@ ul {
 
 .contacts {
     display: flex;
-    margin-left: 93px;
+    margin-left: auto;
 }
 
 .site-nav .item:not(:last-child) {
