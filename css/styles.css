@@ -358,17 +358,14 @@ ul {
 }
 /* Footer */
 .footer {
+    display: inline-block;
     padding-top: 60px;
+    padding-left: 215px;
     padding-bottom: 60px;
-    background-color: var(--primary-bg-color);
-     
-}
-.footer-container {
-    /* display: inline-block; */
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 215px;
-    
+    background-color: var(--primary-bg-color);
+ 
 }
 
 .address-footer {
